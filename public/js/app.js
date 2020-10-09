@@ -20,7 +20,7 @@ messsgeOne.textContent= 'Loading Data...'
 messsgeTwo.textContent=''
 
 
-fetch('http://localhost:3000/weatherr?address='+location).then((response)=>{
+fetch('weatherr?address='+location).then((response)=>{
 
 response.json().then((data)=>{
 

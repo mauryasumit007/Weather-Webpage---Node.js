@@ -6,6 +6,10 @@ const forecast=require('./utils/Forecast')
 
 
 const app= express()
+
+const port= process.env.PORT || 3000
+
+
 // define path for express config
 const publicdirectoryPath= path.join(__dirname,'../public')    // for accessing local html file static stored
 const viewsPath =  path.join(__dirname,'../templates/views')  // to access tempaltes 
@@ -159,8 +163,8 @@ app.get('*',(req,res)=>{
     })
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
 
-   console.log('server is up and running on port 3000');
+   console.log('server is up and running on port '+port);
     
 })
