@@ -1,15 +1,26 @@
 {
-  "name": "notes-app",
+  "name": "package",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "weather-app",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "test": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauryasumit007/nodeJs-weatherWebsite.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauryasumit007/nodeJs-weatherWebsite/issues"
+  },
+  "homepage": "https://github.com/mauryasumit007/nodeJs-weatherWebsite#readme",
   "dependencies": {
-    "validator": "^12.1.0",
-    "yargs": "^15.0.2"
-  }
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "keywords": []
 }
