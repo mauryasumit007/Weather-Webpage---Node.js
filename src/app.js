@@ -68,6 +68,8 @@ res.send('<h1>Hello express!</h1>')
              error: 'Addressa term is missing '
          })
        }
+
+       
        console.warn(req.query)
        console.warn(req.query.city)
 
