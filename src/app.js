@@ -30,8 +30,8 @@ app.use(express.static(publicdirectoryPath))    // with this line we can access 
 // Handlebars are used for dynamic web page loading purpose..
 app.get('/index',(req,res)=>{       // handle bar file for abouut page index file
 res.render('index',{
-    title: 'weather of mauli jagran',
-    name: 'sumit maurya '
+    title: 'Know your city weather',
+    name: 'Maurya INC '
 })
 
 })
@@ -41,7 +41,7 @@ res.render('index',{
 app.get('/about',(req,res)=>{    // handle bar file for abouut page hbs file
     res.render('about',{
         title: 'About CHandigarh city',
-        name: 'sumit maurya '
+        name: 'Maurya INC'
     })
     
     })
@@ -60,7 +60,10 @@ app.get('/about',(req,res)=>{    // handle bar file for abouut page hbs file
 
 
 app.get('',(req,res)=>{
-res.send('<h1>Hello express!</h1>')
+    res.render('index',{
+        title: 'Know your city weather',
+        name: 'Maurya INC '
+    })
 })
 
 
