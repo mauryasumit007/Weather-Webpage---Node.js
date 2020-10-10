@@ -7,7 +7,7 @@ const messsgeOne= document.querySelector('#message-1')
 const messsgeTwo= document.querySelector('#message-2')
 
 
-messsgeOne.textContent= 'From Javascript'
+messsgeOne.textContent= 'From ..'
 
 
 
