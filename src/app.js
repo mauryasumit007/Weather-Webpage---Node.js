@@ -7,7 +7,7 @@ const forecast=require('./utils/Forecast')
 
 const app= express()
 
-const PORT= process.env.port || 3000
+const port= process.env.PORT || 3000
 
 
 // define path for express config
@@ -163,8 +163,8 @@ app.get('*',(req,res)=>{
     })
 
 
-app.listen(PORT,()=>{
+app.listen(port,()=>{
 
-   console.log('server is up and running on port '+PORT);
+   console.log('server is up and running on port '+port);
     
 })
