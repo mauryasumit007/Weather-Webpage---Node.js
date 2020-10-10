@@ -24,8 +24,11 @@ console.log('forecast lat and long are'+latitude+' and '+longitude)
     
         }
         else{
+          //  console.log(body.daily.data[0])
 
-        callback(undefined,response.body.daily.data[0].summary + 'it is currently: ' + response.body.currently.temperature)
+        callback(undefined,response.body.daily.data[0].summary + 'it is currently: ' + response.body.currently.temperature 
+        + '  The High today is ' + response.body.daily.data[0].temperatureHigh  + '  with a Low of : ' + response.body.daily.data[0].temperatureLow
+       )
     
         }
 
